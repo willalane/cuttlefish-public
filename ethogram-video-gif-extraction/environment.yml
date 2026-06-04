@@ -1,0 +1,24 @@
+# Conda environment for the behavioural GIF pipeline.
+#
+# Create with:   conda env create -f environment.yml
+# Activate with: conda activate boris-gif-pipeline
+#
+# Notes:
+# - ffmpeg from conda-forge provides both ffmpeg and ffprobe, which is enough
+#   for the two pipeline scripts (extraction and cropping).
+# - The conda-forge ffmpeg build may NOT include the h264_nvenc encoder used in
+#   the optional .mp4 -> .avi conversion command in the README. If you use that
+#   command, install a standalone nvenc-enabled build (e.g. the Gyan.dev full
+#   build used during testing) instead of, or alongside, the conda one.
+# - gifsicle is optional and is not reliably packaged for Windows on conda-forge.
+#   Install it separately if you want the extra compression pass.
+
+name: boris-gif-pipeline
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pillow>=10.0
+  - tqdm>=4.0
+  - ffmpeg          # provides ffmpeg + ffprobe
+  - pip
