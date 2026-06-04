@@ -86,11 +86,12 @@ or software versions may encounter behaviour that has not been tested.
 3. **Audit and curate.** Look through the extracted GIFs and decide which to
    keep. Delete the ones you don't want, or move the keepers into a separate
    folder. This step is entirely manual and is the point of extracting at full
-   resolution first.
-4. **Pick crop and rotation.** Run `gif_crop_picker.py` on the folder of GIFs you
+   resolution first. If your default file viewer isn't cooperating, I've had good
+   luck paging through a folder of GIFs with the freeware [IrfanView 64](https://www.irfanview.com/64bit.htm).
+5. **Pick crop and rotation.** Run `gif_crop_picker.py` on the folder of GIFs you
    kept. For each clip you set a rotation angle and draw a crop window; it saves
    your choices and writes a batch script.
-5. **Apply the crop.** Run the generated `apply_crops.bat` (or `apply_crops.sh`).
+6. **Apply the crop.** Run the generated `apply_crops.bat` (or `apply_crops.sh`).
    The cropped clips are written to a `cropped/` subfolder.
 
 If you do not use BORIS, you can start at step 4: the crop picker works on any
