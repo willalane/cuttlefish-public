@@ -1,0 +1,16 @@
+# Python dependencies for the behavioural GIF pipeline.
+# Install with:  pip install -r requirements.txt
+# Or, with conda: conda env create -f environment.yml  (then: conda activate boris-gif-pipeline)
+#            or:  conda install -c conda-forge pillow tqdm
+#
+# Note: ffmpeg, ffprobe, and gifsicle are NOT Python packages and are not
+# installed by pip. Install them separately and put them on your PATH
+# (see the README "What you need" section).
+#
+# tkinter is part of the Python standard library on the standard Windows and
+# macOS installers, so it is intentionally not listed here. On some Linux
+# distributions install it via the system package manager, e.g.
+#   sudo apt install python3-tk
+
+pillow>=10.0      # gif_crop_picker.py: frame extraction, rotation, preview
+tqdm>=4.0         # boris_gif_extraction.py: progress bar
