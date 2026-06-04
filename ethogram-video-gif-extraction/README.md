@@ -1,4 +1,4 @@
-# Behavioural GIF pipeline: BORIS to cropped ethogram clips
+# GIF creation pipeline from BORIS project files for ethogram clips
 
 This is the pipeline I use to turn behaviours coded in [BORIS](https://www.boris.unito.it/)
 from overhead video into a set of short, straightened, cropped GIFs suitable for
